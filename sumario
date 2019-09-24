@@ -1,0 +1,223 @@
+GIT: Versionamento de código
+
+
+  O que é, pra que serve, como funciona? -OK
+  Instalando o GIT -OK
+  Configurando o GIT -OK
+  Iniciando um repositório -OK
+  Branch, README e Commit  -OK
+  Revertendo Modificações -OK
+  Trabalhando com diferentes Branches -OK
+  Diferença entre arquivos -OK
+  Criando um repositório no Github  -OK
+  Conectando repositório local ao remoto  -OK
+  Fazendo alterações no repositório remoto  -OK
+  Ignorando arquivos do repositório (gitignore)  -OK
+  Revertendo sem perder o código (Revert) -OK
+  Deletando branches locais e remotos -OK
+  Puxando alterações de outras pessoas (pull) -OK
+  Clonando repositórios remotos -OK
+  Contribuindo com outros repositórios (fork / pull request) -OK
+
+
+
+ 1 - problema
+  Joãozinho não consiga voltar alterações em seus arquivos.
+
+ 2 - problema
+  Joãozinho não consiga trabalhar em equipe
+
+  Versionamento (Git)
+
+
+        CONFIGURADO O GIT
+
+        git config --global user.name "Daivson Natanaele"
+        git config --global user.email  "daivsonatanaele@gmail.com"
+
+        git config --global core.editor (PHP STORM)
+
+        CONSULTA NO GIT - NO TERMINAL
+
+       git config user.name
+       git config user.email
+       git config --list
+
+
+        cls - limpar todos os comandos na tela do terminal
+
+        INICIANDO UM REPOSITÓRIO
+
+        ENTRAR NA RAIZ DO HD
+
+        cd c:/users/daivson - acessar a pasta
+        cd desktop
+
+        cd .. (volta a pasta anterior)
+
+        dir - tree /f (mostrar os arquivos dentro da pasta).
+
+        cd c:/wamp/www entrar na pasta do wamp no www
+
+        CRIANDO UMA PASTA
+        mkdir modulogit
+
+        cd modulogit
+
+        INICIANDO UM REPOSITÓRIO
+
+        git init
+
+        Branch, README e Commit
+
+
+          verificar o status na pasta
+                - git satus
+
+          adiciona no monitoramento do git
+             - git add -A
+            pega todos os arquivos
+
+
+            - git commit -m "  Mensagem"
+
+            mensagem sobre a descrição do comando que foi feito
+            atualizado no código
+
+
+            lista de todos os commit
+                - git log
+
+
+            efetua alteração
+             git status
+             git add -A
+             git commit " "
+
+
+            Revertendo modificações
+
+             mostar tudo que foi feito
+              git log
+
+             lista branch
+                git branch
+
+            git commit am " mensagem "
+
+           soft - mantem os modificação não commitada
+           mixed - a mesma coisa do soft a diferença que volta antes do add -A
+           hard -
+
+            git reset -hard (coloca o código)
+
+
+            Trabalhando com diferentes Branches
+
+            comando para criar branch
+            git branch nome
+
+            verificar os branchs
+
+            git branch
+
+            comando para troca de branch
+            git checkout nome(branch)
+
+
+
+           Diferença entre arquivos
+
+            ver alterações por detalhes
+            git diff
+
+            git diff --name-only
+
+            mostrar apena o arquivo alterado.
+
+            git dif nome do arquivos
+
+            defazer alteração de apenas um arquivo
+
+            git checkout HEAD -- style.css(nome do arquivo)
+
+         Criando um repositório no Github
+
+         cria  conta no site github
+          cria o repositorio
+
+
+
+        Conectando repositório local ao remoto
+
+         baixa git bach
+
+         abrir o terminal executa o primeiro comando
+
+         $ ssh-keygen -t rsa -b 4096 -C "daivsonatanaele@gmail.com"
+
+
+        onde será salvo o arquivo chave key
+         Generating public/private rsa key pair.
+
+         Enter a file in wich to save the key(/c/Users/you/.ssh/id_rsa):[Press enter]
+
+            enivar para servidor remoto
+            git remote add origin https://github.com/ClarckDaivson/modulogit.git
+            git push -u origin master
+
+
+            Ignorando arquivos do repositório (gitignore)
+
+
+                .gitignore (salvar um arquiv com esse nome)
+                colocar os nome
+                backup_banco.sql
+                *.txt
+
+                pasta
+                qualquer/* ou
+                qualuqer/
+
+         Revertendo sem perder o código (Revert)
+            git revert (revertendo sem perder o código(Revert)
+
+
+            git revert --no-edit código do commit
+
+        Deletando branches locais e remotos
+
+         vendo o branch cadastrado
+            git branch
+
+         selecionando o branch
+         git checkout nome
+
+         git push origin teste
+
+
+          deletar o push secundario criado
+
+          git push origin :teste - removendo o branch de teste
+
+
+          deletando o push no local
+          git checkout master
+
+          git branch -D teste deletando um branch no local
+
+
+         Puxando alterações de outras pessoas (pull)
+
+            git push origin master
+
+            puxando alteração de outras pesssoas pull
+
+            git pull origin master
+
+          Clonando repositórios remotos
+
+          git clone o link
+
+          Contribuindo com outros repositórios (fork / pull request)
+
